@@ -1,4 +1,32 @@
 html, body {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoard{
+  height: 200px;
+  width: 500px;
+  background-color: red;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.piece{
+  max-height:150px;
+  max-width: :150px;
+}
+
+.piece img{
+  max-height:150px;
+  min-width:150px;
+  border-radius: 25px;
+}
+
+.piece img:hover{
+  transform: scale(1.2);
+  border: 5px black solid;
 }

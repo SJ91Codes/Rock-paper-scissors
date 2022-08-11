@@ -63,18 +63,6 @@ function game(rounds){
   let winner
   let compScore=0
   let playScore=0
-  while(rounds > 0){
-    winner = compare(getUser(), compHand())
-    if (winner === "Player"){
-      playScore +=1
-    } else if (winner === "Computer"){
-      compScore+=1
-    }
-    console.log("The winner is: " + winner)
-    rounds-=1
-  }
-  console.log("Final score- Player: " + playScore + " Computer: " + compScore)
+  
 }
 
-let rounds = prompt("Rounds?")
-game(rounds)
